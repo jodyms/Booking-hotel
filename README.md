@@ -4,7 +4,7 @@ A full-stack hotel booking system with OAuth2 authentication, built with React T
 
 ## Features
 
-- **Authentication**: OAuth2 integration
+- **Authentication**: OAuth2 with JWT integration
 - **Room Management**: Add, edit, and manage hotel rooms with amenities
 - **Booking System**: Complete booking workflow with guest information
 - **Dashboard Analytics**: Occupancy rates, check-in/check-out tracking
@@ -32,7 +32,6 @@ A full-stack hotel booking system with OAuth2 authentication, built with React T
 1. **Java 17+** - For Spring Boot backend
 2. **Node.js 18+** - For React frontend
 3. **MySQL** - Database (via XAMPP recommended)
-4. **Keycloak Server** - OAuth2 authentication provider
 
 ## Setup Instructions
 
@@ -41,12 +40,6 @@ A full-stack hotel booking system with OAuth2 authentication, built with React T
 2. Start Apache and MySQL services
 3. Create database: `hotel_booking`
 4. Import schema from `hotel_booking.sql`
-
-### Keycloak Configuration
-1. Setup Keycloak server
-2. Create realm: `hotel-booking`
-3. Create client: `hotel-booking-client`
-4. Set redirect URI: `http://localhost:5173/callback`
 
 ### Backend Setup
 ```bash
@@ -112,14 +105,6 @@ booking-hotel/
 - `mvn spring-boot:run` - Start development server
 - `mvn test` - Run tests
 - `mvn clean install` - Clean build
-
-## Authentication Flow
-
-1. User clicks login → Redirected to Keycloak
-2. User authenticates → Keycloak returns authorization code
-3. Frontend exchanges code for JWT token via backend
-4. JWT stored in localStorage for API calls
-5. Backend validates JWT on protected endpoints
 
 ## Contributing
 
