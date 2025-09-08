@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import RoomTable from '../components/RoomTable';
-import type { Room, RoomListResponse, RoomPaginationParams } from '../../../types/room';
+import type { Room, RoomListResponse, RoomPaginationParams } from '../types';
 
 const RoomListPage: React.FC = () => {
   const navigate = useNavigate();

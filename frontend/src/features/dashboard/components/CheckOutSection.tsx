@@ -1,21 +1,6 @@
 import React from 'react';
 import GuestCard from './GuestCard';
-
-interface CheckOutGuest {
-  id: number;
-  guestName: string;
-  roomNumber: string;
-  checkInDate: string;
-  checkOutDate: string;
-  dayRemaining: number;
-}
-
-interface CheckOutSectionProps {
-  guests: CheckOutGuest[];
-  loading?: boolean;
-  onCheckOut: (guestId: number) => void;
-  className?: string;
-}
+import type { CheckOutGuest, CheckOutSectionProps } from '../types';
 
 const CheckOutSection: React.FC<CheckOutSectionProps> = ({
   guests,

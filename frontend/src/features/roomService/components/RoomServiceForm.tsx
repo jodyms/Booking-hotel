@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
-import { ROOM_SERVICE_TYPES } from '../../../types/roomService';
-
-interface RoomServiceFormProps {
-  onSubmit: (data: {
-    roomNumber: string;
-    serviceType: string;
-    amount: number;
-    description?: string;
-  }) => void;
-  loading?: boolean;
-  error?: string | null;
-}
+import { ROOM_SERVICE_TYPES } from '../types';
+import type { RoomServiceFormProps } from '../types';
 
 const RoomServiceForm: React.FC<RoomServiceFormProps> = ({ onSubmit, loading, error }) => {
   const [formData, setFormData] = useState({

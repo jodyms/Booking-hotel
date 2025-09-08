@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { CreateRoomRequest, Room, UpdateRoomRequest } from '../../../types/room';
+import type { CreateRoomRequest, Room, UpdateRoomRequest, RoomFormProps } from '../types';
 import type { Amenity } from '../../../types/amenity';
 import { amenityService } from '../../../services/amenityService';
 import { roomService } from '../services/roomService';
-
-interface RoomFormProps {
-  onSubmit?: (room: CreateRoomRequest | UpdateRoomRequest | Room) => void;
-  onCancel?: () => void;
-  loading?: boolean;
-  initialRoom?: Room;
-  isEditMode?: boolean;
-}
 
 const RoomForm: React.FC<RoomFormProps> = ({ onSubmit, onCancel, loading = false, initialRoom, isEditMode = false }) => {
   const navigate = useNavigate();

@@ -1,12 +1,5 @@
 import React from 'react';
-import type { BookingFormData } from '../../../types/booking';
-
-interface GuestInfoFormProps {
-  formData: BookingFormData;
-  onChange: (data: Partial<BookingFormData>) => void;
-  errors?: Partial<Record<keyof BookingFormData, string>>;
-  disabled?: boolean;
-}
+import type { BookingFormData, GuestInfoFormProps } from '../types';
 
 const GuestInfoForm: React.FC<GuestInfoFormProps> = ({
   formData,

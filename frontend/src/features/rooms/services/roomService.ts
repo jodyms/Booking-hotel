@@ -1,6 +1,6 @@
 import axios from 'axios';
 import authService from '../../auth/services/authService';
-import type { Room, RoomListResponse, RoomPaginationParams, CreateRoomRequest, UpdateRoomRequest } from '../../../types/room';
+import type { Room, RoomListResponse, RoomPaginationParams, CreateRoomRequest, UpdateRoomRequest } from '../types';
 
 const API_BASE_URL = 'http://localhost:8080/api';
 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import authService from '../../auth/services/authService';
-import type { CheckInGuest, CheckOutGuest, OccupancyRateData } from '../../../types/dashboard';
+import type { CheckInGuest, CheckOutGuest, OccupancyRateData } from '../types';
 
 const API_BASE_URL = 'http://localhost:8080/api';
 

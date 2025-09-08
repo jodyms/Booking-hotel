@@ -2,12 +2,7 @@ import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { createRoomService, clearErrors, clearCreateSuccess } from '../../../store/roomServiceSlice';
 import RoomServiceForm from './RoomServiceForm';
-import type { CreateRoomServiceRequest } from '../../../types/roomService';
-
-interface RoomServiceModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+import type { CreateRoomServiceRequest, RoomServiceModalProps } from '../types';
 
 const RoomServiceModal: React.FC<RoomServiceModalProps> = ({ isOpen, onClose }) => {
   const dispatch = useAppDispatch();

@@ -1,13 +1,6 @@
 import React from 'react';
-import type { Booking } from '../../../types/booking';
-import { BookingStatusColors, BookingStatusDisplay } from '../../../types/booking';
-
-interface BookingTableProps {
-  bookings: Booking[];
-  loading?: boolean;
-  onDetailClick?: (booking: Booking) => void;
-  className?: string;
-}
+import type { Booking, BookingTableProps } from '../types';
+import { BookingStatusColors, BookingStatusDisplay } from '../types';
 
 const BookingTable: React.FC<BookingTableProps> = ({
   bookings,

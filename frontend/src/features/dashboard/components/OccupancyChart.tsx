@@ -11,6 +11,7 @@ import {
 } from 'chart.js';
 import type { ChartOptions } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import type { OccupancyDataPoint, OccupancyChartProps } from '../types';
 
 ChartJS.register(
   CategoryScale,
@@ -21,18 +22,6 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
-interface OccupancyDataPoint {
-  day: number;
-  approved: number;
-  declined: number;
-}
-
-interface OccupancyChartProps {
-  data: OccupancyDataPoint[];
-  loading?: boolean;
-  className?: string;
-}
 
 const OccupancyChart: React.FC<OccupancyChartProps> = ({
   data,

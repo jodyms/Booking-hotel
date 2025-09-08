@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import type { RoomService, CreateRoomServiceRequest } from '../types/roomService';
+import type { RoomService, CreateRoomServiceRequest } from '../features/roomService/types';
 import { roomServiceService } from '../features/roomService/services/roomServiceService';
 
 interface RoomServiceState {

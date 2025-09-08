@@ -1,15 +1,5 @@
 import React from 'react';
-
-interface GuestCardProps {
-  guestName: string;
-  roomNumber: string;
-  leavingDate: string;
-  dayRemaining: number;
-  buttonText: string;
-  buttonColor?: 'blue' | 'green';
-  onButtonClick: () => void;
-  className?: string;
-}
+import type { GuestCardProps } from '../types';
 
 const GuestCard: React.FC<GuestCardProps> = ({
   guestName,

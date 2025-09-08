@@ -1,15 +1,5 @@
 import React from 'react';
-import type { Room, RoomListResponse } from '../../../types/room';
-
-interface RoomTableProps {
-  data: RoomListResponse | null;
-  loading: boolean;
-  onSort: (field: string) => void;
-  sortField?: string;
-  sortDirection?: 'asc' | 'desc';
-  onPageChange: (page: number) => void;
-  onDetailClick: (room: Room) => void;
-}
+import type { Room, RoomListResponse, RoomTableProps } from '../types';
 
 const RoomTable: React.FC<RoomTableProps> = ({
   data,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import RoomForm from '../components/RoomForm';
-import type { Room, UpdateRoomRequest } from '../../../types/room';
+import type { Room, UpdateRoomRequest } from '../types';
 import { roomService } from '../services/roomService';
 
 const EditRoomPage: React.FC = () => {

@@ -3,7 +3,7 @@ import authService from '../../auth/services/authService';
 import type { 
   RoomService, 
   CreateRoomServiceRequest 
-} from '../../../types/roomService';
+} from '../types';
 
 const API_BASE_URL = 'http://localhost:8080/api';
 

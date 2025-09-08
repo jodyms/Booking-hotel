@@ -6,8 +6,8 @@ import type {
   CreateBookingRequest,
   AvailableRoomRequest,
   CheckoutSummary
-} from '../types/booking';
-import type { Room } from '../types/room';
+} from '../features/bookings/types';
+import type { Room } from '../features/rooms/types';
 import { bookingService } from '../features/bookings/services/bookingService';
 
 interface BookingState {

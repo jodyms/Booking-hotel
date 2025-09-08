@@ -11,8 +11,8 @@ import {
 } from '../../../store/bookingSlice';
 import BookingTable from '../components/BookingTable';
 import Pagination from '../../../components/Pagination';
-import type { Booking, BookingStatus } from '../../../types/booking';
-import { BookingStatusDisplay } from '../../../types/booking';
+import type { Booking, BookingStatus } from '../types';
+import { BookingStatusDisplay } from '../types';
 
 const BookingListPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

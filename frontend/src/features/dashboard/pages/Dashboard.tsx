@@ -8,24 +8,14 @@ import {
   clearCheckoutSummary,
   fetchBookingById
 } from '../../../store/bookingSlice';
-import type { Booking } from '../../../types/booking';
+import type { Booking } from '../../bookings/types';
+import type { User } from '../../auth/types';
+import type { DashboardProps } from '../types';
 import CheckInSection from '../components/CheckInSection';
 import CheckOutSection from '../components/CheckOutSection';
 import OccupancyChart from '../components/OccupancyChart';
 import RoomServiceModal from '../../roomService/components/RoomServiceModal';
 import CheckoutModal from '../../bookings/components/CheckoutModal';
-
-interface User {
-  sub: string;
-  username: string;
-  email: string;
-  name: string;
-}
-
-interface DashboardProps {
-  user: User;
-  onLogout: () => void;
-}
 
 const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
   const dispatch = useAppDispatch();

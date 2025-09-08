@@ -1,14 +1,5 @@
 import React from 'react';
-import type { Booking, CheckoutSummary } from '../../../types/booking';
-
-interface CheckoutModalProps {
-  isOpen: boolean;
-  booking: Booking | null;
-  checkoutSummary: CheckoutSummary | null;
-  loading: boolean;
-  onClose: () => void;
-  onConfirm: () => void;
-}
+import type { Booking, CheckoutSummary, CheckoutModalProps } from '../types';
 
 const CheckoutModal: React.FC<CheckoutModalProps> = ({
   isOpen,

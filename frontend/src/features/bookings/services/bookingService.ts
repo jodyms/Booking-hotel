@@ -7,8 +7,8 @@ import type {
   CreateBookingRequest, 
   AvailableRoomRequest,
   CheckoutSummary
-} from '../../../types/booking';
-import type { Room } from '../../../types/room';
+} from '../types';
+import type { Room } from '../../rooms/types';
 
 const API_BASE_URL = 'http://localhost:8080/api';
 

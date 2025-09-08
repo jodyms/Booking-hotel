@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import type { Room, RoomListResponse, RoomPaginationParams } from '../types/room';
+import type { Room, RoomListResponse, RoomPaginationParams } from '../features/rooms/types';
 import { roomService } from '../features/rooms/services/roomService';
 
 interface RoomState {

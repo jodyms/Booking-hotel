@@ -12,8 +12,8 @@ import {
   clearError,
   clearAvailableRoomsError,
 } from '../../../store/bookingSlice';
-import type { BookingFormData } from '../../../types/booking';
-import type { Room } from '../../../types/room';
+import type { BookingFormData } from '../types';
+import type { Room } from '../../rooms/types';
 
 const NewBookingPage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

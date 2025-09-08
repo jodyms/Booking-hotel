@@ -1,14 +1,6 @@
 import React from 'react';
-import type { Room } from '../../../types/room';
-
-interface RoomSelectionCardProps {
-  room: Room;
-  isSelected?: boolean;
-  numberOfNights: number;
-  totalAmount: number;
-  onSelect: (room: Room) => void;
-  disabled?: boolean;
-}
+import type { Room } from '../../rooms/types';
+import type { RoomSelectionCardProps } from '../types';
 
 const RoomSelectionCard: React.FC<RoomSelectionCardProps> = ({
   room,

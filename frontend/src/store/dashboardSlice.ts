@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import type { CheckInGuest, CheckOutGuest, OccupancyRateData } from '../types/dashboard';
+import type { CheckInGuest, CheckOutGuest, OccupancyRateData } from '../features/dashboard/types';
 import { dashboardService } from '../features/dashboard/services/dashboardService';
 import { checkInGuest, checkOutGuest } from './bookingSlice';
 
