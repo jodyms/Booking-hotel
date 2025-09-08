@@ -4,7 +4,7 @@ A full-stack hotel booking system with OAuth2 authentication, built with React T
 
 ## Features
 
-- **Authentication**: OAuth2 integration with Keycloak
+- **Authentication**: OAuth2 integration
 - **Room Management**: Add, edit, and manage hotel rooms with amenities
 - **Booking System**: Complete booking workflow with guest information
 - **Dashboard Analytics**: Occupancy rates, check-in/check-out tracking
